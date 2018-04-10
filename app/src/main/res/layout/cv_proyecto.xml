@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cvProyectos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:padding="3dp"
+    card_view:cardCornerRadius="30dp"
+    card_view:cardElevation="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtVEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado: "
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end" />
+
+                <TextView
+                    android:id="@+id/txtVEstructura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estructura: "
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end" />
+
+                <TextView
+                    android:id="@+id/txtVCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo: "
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtVnombreEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.9" />
+
+
+                <TextView
+                    android:id="@+id/txtVnombreEstructura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.9" />
+
+                <TextView
+                    android:id="@+id/txtVnombreCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.9"
+                    android:ellipsize="marquee"
+                    android:maxLength="23"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgBEditarProyecto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@mipmap/ic_editar" />
+
+                <ImageButton
+                    android:id="@+id/imgBBorrarProyecto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@mipmap/ic_borrar" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.9"
+                android:textStyle="normal|bold"
+                android:text="Estatus:" />
+
+            <ImageView
+                android:id="@+id/imgVEstatus"
+                android:layout_width="23dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="-2dp"
+                app:srcCompat="@mipmap/estatus_incompleto" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

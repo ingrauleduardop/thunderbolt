@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/toogleS1"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="Definir Dimension de la Estructura."
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal|bold"
+            android:gravity="left"
+            android:layout_weight="0.9" />
+
+        <ImageButton
+            android:id="@+id/imgBDimensionEstructura"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:src="@mipmap/ic_buscar"
+            android:layout_weight="0.02"
+            android:layout_width="30dp"
+            android:layout_height="31dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearDimensionesS1"
+        android:weightSum="1"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="Ancho: "
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal|bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/ValorAnchoS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="70"
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="Alto: "
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal|bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/ValorAltoS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="90"
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="Largo: "
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal|bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/ValorLargoS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="3"
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="1"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="8dp"
+            android:text="Situación relativa del Edificio o estructura en evaluación"
+            android:inputType="textMultiLine"
+            android:ems="14"
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal|bold"
+            android:gravity="left"
+            android:layout_weight="0.9" />
+
+        <ImageButton
+            android:id="@+id/imgBEnumS1"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:src="@mipmap/ic_buscar"
+            android:layout_weight="0.02"
+            android:layout_width="30dp"
+            android:layout_height="31dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEstructuraEnEvaluacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/estructuraEnEvaluacionDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="La estructura está rodeada por estructuras más altas o por arboles"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:textColor="@color/grisOscuro"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.9"
+            android:paddingTop="6dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcularS1"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boton_crear"
+        android:text="Cálcular"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
